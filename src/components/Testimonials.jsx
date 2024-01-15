@@ -10,15 +10,15 @@ import { testimonials } from '@/data';
 
 const Testimonials = () => {
   return (
-        <section id="testimonials" class="testimonials section-bg">
-            <div class="container" data-aos="fade-up">
+        <section id="testimonials" className="testimonials section-bg">
+            <div className="container" data-aos="fade-up">
 
-              <div class="section-header">
+              <div className="section-header">
                 <h2>Testimonials</h2>
                 <p>Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et autem uia reprehenderit sunt deleniti</p>
               </div>
 
-              <Swiper class="slides-2 swiper" 
+              <Swiper className="slides-2 swiper" 
                 slidesPerView={2}
                 spaceBetween={30}
                 pagination={{
@@ -31,19 +31,19 @@ const Testimonials = () => {
               {
                 testimonials.map((item, index) => {
                   return (
-                    <SwiperSlide class="swiper-slide">
-                      <div class="testimonial-wrap">
-                        <div class="testimonial-item">
-                          <img src={item.img.src} class="testimonial-img" alt="" />
+                    <SwiperSlide key={index} className="swiper-slide">
+                      <div className="testimonial-wrap">
+                        <div className="testimonial-item">
+                          <img src={item.img.src} className="testimonial-img" alt="" />
                           <h3>{item.name}</h3>
                           <h4>{item.title}</h4>
-                          <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                          <div className="stars">
+                            <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i>
                           </div>
                           <p>
-                            <i class="bi bi-quote quote-icon-left"></i>
+                            <i className="bi bi-quote quote-icon-left"></i>
                             {item.test}
-                            <i class="bi bi-quote quote-icon-right"></i>
+                            <i className="bi bi-quote quote-icon-right"></i>
                           </p>
                         </div>
                       </div>

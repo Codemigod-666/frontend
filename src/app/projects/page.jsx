@@ -8,8 +8,8 @@ import Projects from '@/components/Projects';
 const page = () => {
   return (
     <main>
-        <div class="breadcrumbs d-flex align-items-center" style={{backgroundImage:`url(${breadBackground.src})`,backgroundSize:'cover'}}>
-            <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+        <div className="breadcrumbs d-flex align-items-center" style={{backgroundImage:`url(${breadBackground.src})`,backgroundSize:'cover'}}>
+            <div className="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
                 <h2>Projects</h2>
                 <ol>

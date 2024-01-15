@@ -31,17 +31,17 @@ const Projects = () => {
 
   
   return (
-    <section id="projects" class="projects">
-            <div class="container" data-aos="fade-up">
+    <section id="projects" className="projects">
+            <div className="container" data-aos="fade-up">
 
-              <div class="section-header">
+              <div className="section-header">
                 <h2>Our Projects</h2>
                 <p>Consequatur libero assumenda est voluptatem est quidem illum et officia imilique qui vel architecto accusamus fugit aut qui distinctio</p>
               </div>
 
-              <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
+              <div className="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
 
-                <ul class="portfolio-flters" data-aos="fade-up" data-aos-delay="100">
+                <ul className="portfolio-flters" data-aos="fade-up" data-aos-delay="100">
                 {
                   proTabs.map((item, index) => {
                     return (
@@ -51,20 +51,20 @@ const Projects = () => {
                 }
                 </ul>
                 
-                <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                <div className="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
                 {
                   category === 'all'? 
                   proData.map((item, index) => {
                     return (
-                      <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling" key={index}>
-                        <div class="portfolio-content h-100">
-                          <img src={item.img.src} class="img-fluid" alt="" />
-                          <div class="portfolio-info">
+                      <div className="col-lg-4 col-md-6 portfolio-item filter-remodeling" key={index}>
+                        <div className="portfolio-content h-100">
+                          <img src={item.img.src} className="img-fluid" alt="" />
+                          <div className="portfolio-info">
                             <h4>{item.id}</h4>
                             <p>Lorem ipsum, dolor sit amet consectetur</p>
-                            <a href="assets/img/projects/remodeling-1.jpg" title="Remodeling 1" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                            <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            <a href="assets/img/projects/remodeling-1.jpg" title="Remodeling 1" data-gallery="portfolio-gallery-remodeling" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
+                            <a href="project-details.html" title="More Details" className="details-link"><i className="bi bi-link-45deg"></i></a>
                           </div>
                         </div>
                       </div>
@@ -72,14 +72,14 @@ const Projects = () => {
                   }): 
                   proData.filter((data) => data.category === category).map((item, index) => {
                     return (
-                      <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling" key={index}>
-                        <div class="portfolio-content h-100">
-                          <img src={item.img.src} class="img-fluid" alt="" />
-                          <div class="portfolio-info">
+                      <div className="col-lg-4 col-md-6 portfolio-item filter-remodeling" key={index}>
+                        <div className="portfolio-content h-100">
+                          <img src={item.img.src} className="img-fluid" alt="" />
+                          <div className="portfolio-info">
                             <h4>{item.id}</h4>
                             <p>Lorem ipsum, dolor sit amet consectetur</p>
-                            <a href="assets/img/projects/remodeling-1.jpg" title="Remodeling 1" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                            <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            <a href="assets/img/projects/remodeling-1.jpg" title="Remodeling 1" data-gallery="portfolio-gallery-remodeling" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
+                            <a href="project-details.html" title="More Details" className="details-link"><i className="bi bi-link-45deg"></i></a>
                           </div>
                         </div>
                       </div>
