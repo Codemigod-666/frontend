@@ -97,7 +97,7 @@ export default function Home() {
         >
         {
           heroCarousel.map((item, index) => (
-                  <SwiperSlide index={index} style={{width:'100vw', height:'100vh', filter:'grayscale(0.2)',opacity:'0.2' , background:`url(${item.img.src}) center`, backgroundPosition:'contain'}}>
+                  <SwiperSlide key={index} style={{width:'100vw', height:'100vh', filter:'grayscale(0.2)',opacity:'0.2' , background:`url(${item.img.src}) center`, backgroundPosition:'contain'}}>
                   </SwiperSlide>
               ))
           }
@@ -168,7 +168,7 @@ export default function Home() {
               {
                 constructions.map((item, index) => {
                   return (
-                    <div index={index} className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div key={index} className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                       <div className="card-item">
                         <div className="row">
                           <div className="col-xl-5">
@@ -197,15 +197,15 @@ export default function Home() {
           <Service />
           <AltServices />
 
-          <section id="features" class="features section-bg">
-            <div class="container" data-aos="fade-up">
+          <section id="features" className="features section-bg">
+            <div className="container" data-aos="fade-up">
 
-              <ul class="nav nav-tabs row  g-2 d-flex">
+              <ul className="nav nav-tabs row  g-2 d-flex">
 
               {
                 navTabs.map((item, index) => {
                   return (
-                    <li className='nav-item col-3' onClick={() => handleTabing(index)} key={index}>
+                    <li key={index} className='nav-item col-3' onClick={() => handleTabing(index)}>
                       <a className='nav-link' style={{borderColor:tabing[index] === 'true'? '#feb900':'',borderTop:'none', borderLeft:'none', borderRight:'none', borderBottom:`4px solid`, borderColor:tabing[index] === 'true'? '#feb900':'#e2e4e6'}} >
                         <h4 style={{color:tabing[index] === 'true'? '#feb900':''}}>{item.name}</h4>
                       </a>
@@ -215,26 +215,26 @@ export default function Home() {
               }
               </ul>
 
-              <div class="tab-content">
+              <div className="tab-content">
 
               {
                 tabsData.map((item , index) => {
                   return (
-                    <div class="tab-pane" style={{display: tabing[index] === "true" ? 'block': 'none'}} id="tab-1" key={index}>
-                      <div class="row">
-                        <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                    <div className="tab-pane" style={{display: tabing[index] === "true" ? 'block': 'none'}} id="tab-1" key={index}>
+                      <div className="row">
+                        <div className="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
                           <h3>{item.title}</h3>
-                          <p class="fst-italic">
+                          <p className="fst-italic">
                             {item.subtitle}
                           </p>
                           <ul>
-                            <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                            <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                            <li><i className="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                            <li><i className="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                            <li><i className="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
                           </ul>
                         </div>
-                        <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
-                          <img src={item.img.src} alt="" class="img-fluid" />
+                        <div className="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                          <img src={item.img.src} alt="" className="img-fluid" />
                         </div>
                       </div>
                     </div>
@@ -250,46 +250,46 @@ export default function Home() {
           <Projects />
           <Testimonials />
 
-          <section id="recent-blog-posts" class="recent-blog-posts" >
-            <div class="container" data-aos="fade-up">
+          <section id="recent-blog-posts" className="recent-blog-posts" >
+            <div className="container" data-aos="fade-up">
 
           
           
-              <div class=" section-header">
+              <div className=" section-header">
                 <h2>Recent Blog Posts</h2>
                 <p>In commodi voluptatem excepturi quaerat nihil error autem voluptate ut et officia consequuntu</p>
               </div>
 
-              <div class="row gy-5">
+              <div className="row gy-5">
 
               {
                 blogData.map((item, index) => {
                   return (
-                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="post-item position-relative h-100">
+                    <div key={index} className="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div className="post-item position-relative h-100">
   
-                      <div class="post-img position-relative overflow-hidden">
-                        <img src={item.img.src} class="img-fluid" alt="" />
-                        <span class="post-date">{item.date}</span>
+                      <div className="post-img position-relative overflow-hidden">
+                        <img src={item.img.src} className="img-fluid" alt="" />
+                        <span className="post-date">{item.date}</span>
                       </div>
   
-                      <div class="post-content d-flex flex-column">
+                      <div className="post-content d-flex flex-column">
   
-                        <h3 class="post-title">{item.title}</h3>
+                        <h3 className="post-title">{item.title}</h3>
   
-                        <div class="meta d-flex align-items-center">
-                          <div class="d-flex align-items-center">
-                            <i class="bi bi-person"></i> <span class="ps-2">{item.name}</span>
+                        <div className="meta d-flex align-items-center">
+                          <div className="d-flex align-items-center">
+                            <i className="bi bi-person"></i> <span className="ps-2">{item.name}</span>
                           </div>
-                          <span class="px-3 text-black-50">/</span>
-                          <div class="d-flex align-items-center">
-                            <i class="bi bi-folder2"></i> <span class="ps-2">{item.category}</span>
+                          <span className="px-3 text-black-50">/</span>
+                          <div className="d-flex align-items-center">
+                            <i className="bi bi-folder2"></i> <span className="ps-2">{item.category}</span>
                           </div>
                         </div>
   
                         <hr></hr>
   
-                        <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                        <a href="blog-details.html" className="readmore stretched-link"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
   
                       </div>
   
