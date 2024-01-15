@@ -70,7 +70,7 @@ const page = () => {
           {
             teams.map((item, index) => {
                 return (
-                    <div index={index} className="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
+                    <div key={index} className="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
                         <div className="member-img">
                         <img src={item.img.src} className="img-fluid" alt=""></img>
                         <div className="social">
