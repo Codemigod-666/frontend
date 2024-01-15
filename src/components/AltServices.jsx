@@ -24,7 +24,7 @@ const AltServices = () => {
                       return (
                         
                         <div key={index} className="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
-                          <i className="  flex-shrink-0"></i>
+                          <i className="flex-shrink-0"></i>
                           <div>
                             <h4><a href="" className="stretched-link">{item.head}</a></h4>
                             <p>{item.content}</p>

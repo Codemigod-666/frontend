@@ -22,7 +22,7 @@ const AltServices2 = () => {
                   altService.map((item, index) => {
                       return (
                         
-                        <div index={index} className="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+                        <div key={index} className="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
                           <i className="  flex-shrink-0"></i>
                           <div>
                             <h4><a href="" className="stretched-link">{item.head}</a></h4>
