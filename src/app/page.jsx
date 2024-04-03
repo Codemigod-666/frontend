@@ -64,9 +64,9 @@ export default function Home() {
           <div className="info text-center">
             <div className='row justify-content-center'>
             <div className="col-lg-6">
-              <h2 data-aos="fade-down">Welcome to <span>PCS Constructions</span></h2>
+              <h2 data-aos="fade-down">Welcome to <span>PCS</span></h2>
               <p data-aos="fade-up">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              "Welcome to PCS, where your vision finds its perfect foundation. With our expertise and dedication, we transform your dreams into architectural marvels. Experience the synergy of creativity and craftsmanship. Your vision, our foundation – building brilliance together."
               </p>
               <button data-aos="fade-up" href="#get-started" className="btn btn-outline-warning rounded-5 px-5 py-3 mt-3 text-white fw-bold">Get Started</button>
 
@@ -104,58 +104,6 @@ export default function Home() {
       </Swiper>
 
       <main>
-          <section id="get-started" className="get-started section-bg">
-            <div className="container">
-
-              <div className="row justify-content-between gy-4">
-
-                <div className="col-lg-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
-                  <div className="content">
-                    <h3>Minus hic non reiciendis ea possimus at quia.</h3>
-                    <p>Rem id rerum. Debitis deserunt quidem delectus expedita ducimus dolor. Aut iusto ipsa. Eos ipsum nobis ipsa soluta itaque perspiciatis fuga ipsum perspiciatis. Eum amet fugiat totam nisi possimus ut delectus dicta. </p>
-                    <p>Aliquam velit deserunt autem. Inventore et saepe. Tenetur suscipit eligendi labore culpa eos. Deserunt porro magni qui necessitatibus dolorem at animi cupiditate.</p>
-                  </div>
-                </div>
-
-                <div className="col-lg-5" data-aos="fade-down" data-aos-delay="200">
-                  <form action="forms/quote.php" method="post" className="php-email-form">
-                    <h3>Get a quote</h3>
-                    <p>Vel nobis odio laboriosam et hic voluptatem. Inventore vitae totam. Rerum repellendus enim linead sero park flows.</p>
-                    <div className="row gy-3">
-
-                      <div className="col-md-12">
-                        <input type="text" name="name" className="form-control" placeholder="Name" required />
-                      </div>
-
-                      <div className="col-md-12 ">
-                        <input type="email" className="form-control" name="email" placeholder="Email" required />
-                      </div>
-
-                      <div className="col-md-12">
-                        <input type="text" className="form-control" name="phone" placeholder="Phone" required />
-                      </div>
-
-                      <div className="col-md-12">
-                        <textarea className="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                      </div>
-
-                      <div className="col-md-12 text-center">
-                        <div className="loading">Loading</div>
-                        <div className="error-message"></div>
-                        <div className="sent-message">Your quote request has been sent successfully. Thank you!</div>
-
-                        <button type="submit">Get a quote</button>
-                      </div>
-
-                    </div>
-                  </form>
-                </div>
-
-              </div>
-
-            </div>
-          </section>
-
           <section id='constructions' className='constructions bg-white'>
             <div className='container' data-aos="fade-up">
               <div className='section-header'>
