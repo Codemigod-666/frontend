@@ -74,11 +74,11 @@ export default function Home() {
                   Welcome to <span>PCS</span>
                 </h2>
                 <p data-aos="fade-up">
-                  "Welcome to PCS, where your vision finds its perfect
+                  Welcome to PCS, where your vision finds its perfect
                   foundation. With our expertise and dedication, we transform
                   your dreams into architectural marvels. Experience the synergy
                   of creativity and craftsmanship. Your vision, our foundation –
-                  building brilliance together."
+                  building brilliance together.
                 </p>
                 <button
                   data-aos="fade-up"
